@@ -51,7 +51,7 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-index-link" src=""></a>
+                    <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-index-link" src="">Главная</a>
                 </li>
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link">Гостиницы</a>
@@ -66,24 +66,18 @@
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                                Бассейн
-                            </label>
+                            <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                            <label class="control">Бассейн</label>       
                         </li>
 
                         <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="parking-place" checked>
-                                Парковка
-                            </label>
+                            <input class="control-input" type="checkbox" name="parking-place" checked>
+                            <label class="control">Парковка</label>   
                         </li>
 
                         <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" name="wi-fi">
-                                Wi-Fi
-                            </label>
+                            <input class="control-input" type="checkbox" name="wi-fi">
+                            <label class="control">Wi-Fi</label>   
                         </li>
                     </ul>
                 </fieldset>
@@ -92,24 +86,18 @@
                     <legend class="catalog-filter-title">Тип жилья:</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="product-group" checked>
-                                Гостиница
-                            </label>
+                            <input class="control-input" type="radio" name="product-group" checked>
+                            <label class="control">Гостиница</label>  
                         </li>
 
                         <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="product-group">
-                                Мотель
-                            </label>
+                            <input class="control-input" type="radio" name="product-group">
+                            <label class="control">Мотель</label>   
                         </li>
 
                         <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="radio" name="product-group">
-                                Апартаменты
-                            </label>
+                            <input class="control-input" type="radio" name="product-group">
+                            <label class="control">Апартаменты</label>   
                         </li>
                     </ul>
                 </fieldset>
@@ -146,7 +134,7 @@
                 <a class="product-card-button-favorite" href="#">В избранное</a>
                 <span class="visually-hidden">
                     Четырехзвездочная гостиница
-                    <img class="product-card-stars" src="">
+                    <div class="product-card-stars"></div>
                 </span>
                 <p class="product-card-rating">Рейтинг: 8,5</p>
             </li>
@@ -162,7 +150,7 @@
                 <a class="product-card-button-favorite" href="#">В избранное</a>
                 <span class="visually-hidden">
                     Трехзвездочная гостиница
-                    <img class="product-card-stars" src="">
+                    <div class="product-card-stars"></div>
                 </span>
                 <p class="product-card-rating">Рейтинг: 8,9</p>
             </li>
@@ -178,7 +166,7 @@
                 <a class="product-card-button-favorite" href="#">В избранном</a>
                 <span class="visually-hidden">
                     Двухзвездочная гостиница
-                    <img class="product-card-stars" src="">
+                    <div class="product-card-stars"></div>
                 </span>
                 <p class="product-card-rating">Рейтинг: 9,2</p>
             </li>
@@ -194,13 +182,13 @@
                 <a class="product-card-button-favorite" href="#">В избранное</a>
                 <span class="visually-hidden">
                     Двухзвездочная гостиница
-                    <img class="product-card-stars" src="">
+                    <div class="product-card-stars"></div>
                 </span>
                 <p class="product-card-rating">Рейтинг: 9,2</p>
             </li>
         </ul>
 
-        <ol class="pagination">
+        <ul class="pagination">
             <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
             </li>
@@ -219,13 +207,15 @@
             <li class="pagination-item">
                 <a class="pagination-link" href="#">10</a>
             </li>
-        </ol>
+        </ul>
 
         <p>Гостиниц на странице:</p>
         <select class="select-amount-product-on-page" aria-label="Сортировка количества товаров на странице">
             <option value="four">4</option>
+            <option value="eight">8</option>
+            <option value="sixteen">16</option>
         </select>
-        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+        <a class="pagination-show-more-link" href="#">Загрузить ещё</a>
 
         <section class="newsletter">
             <h2 class="newsletter-catalog-title">Подпишитесь на рассылку</h2>
