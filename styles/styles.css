@@ -20,13 +20,29 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #FFFFFF;
   color: #000000;
-  margin: 0px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 img {
@@ -37,6 +53,41 @@ img {
 .main-page-header {
   background-color: #FFFFFF;
   color: #000000;
+}
+
+.header-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  margin-left: 70px;
+}
+
+.main-navigation-header {
+  margin-left: 30px;
+  width: 400px;
+}
+
+.main-navigation-list {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 310;
+  margin-left: 282px;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-banner-logo {
+  margin: 0 auto;
+  display: block;
 }
 
 .main-navigation-link {
@@ -82,6 +133,8 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  width: 720px;
+  margin: 0 auto;
 }
 
 .post-banner-text-description {
@@ -89,14 +142,50 @@ img {
   line-height: 36px;
   color: #333333;
   text-align: center;
+  width: 720px;
+  margin: 0 auto;
 }
 
 .advantages-list {
   text-align: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.sub-advantages-list-with-logo {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-advantages-item-food {
+  width: 400px;
+}
+
+.sub-advantages-item-road {
+  width: 400px;
+}
+
+.advantage-text-container {
+  width: 400px;
+  margin: auto;
+}
+
+.advantages-first-photo {
+  margin: 0 auto;
+}
+
+.sub-advantages-item {
+  width: 400px;
+  height: 384px;
 }
 
 .advantages-item {
+  width: 1200px;
   background-color: #83B3D3;
+  display: flex;
 }
 
 .sub-advantages-item {
@@ -117,6 +206,7 @@ img {
   line-height: 28px;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin: 0 auto;
 }
 
 .sub-advantages-title {
@@ -125,10 +215,26 @@ img {
 
 .advantages-description {
   color: #FFFFFF;
+  width: 220px;
+  margin: 0 auto;
 }
 
 .sub-advantages-description {
   color: #333333;
+  width: 250px;
+  margin: 0 auto;
+
+}
+
+.advantages-number {
+  width: 250px;
+  margin: 0 auto;
+  color: #FFFFFF;
+}
+
+.sub-advantages-number {
+  width: 250px;
+  margin: 0 auto;
 }
 
 .main-index-appointment-title {
@@ -137,6 +243,8 @@ img {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  width: 720px;
+  margin: 0 auto;
 }
 
 .main-index-appointment-description {
@@ -144,17 +252,22 @@ img {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  width: 720px;
+  margin: 0 auto;
 }
 
 .main-index-appointment-link {
   font-size: 20px;
   line-height: 36px;
   border-radius: 10px;
+  width: 575px;
+  margin: 0 auto;
 }
 
 .newsletter {
   background-image: url("../images/mailing-form-background.jpg");
   background-size: 100% auto;
+  background-repeat: no-repeat;
   color: #FFFFFF;
   background-color: #83B3D3;
 }
@@ -165,16 +278,21 @@ img {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  width: 720px;
+  margin: 0 auto;
 }
 
 .newsletter-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  width: 720px;
+  margin: 0 auto;
 }
 
 .newsletter-form {
   text-align: center;
+  display: flex;
 }
 
 .newsletter-button {
@@ -187,6 +305,15 @@ img {
   line-height: 26px;
   text-align: center;
   border: none;
+  width: 200px;
+  padding: 0;
+  margin-right: auto;
+}
+
+.newsletter-container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .field {
@@ -196,26 +323,58 @@ img {
   border-radius: 10px 0px 0px 10px;
   background-color: #F2F2F2;
   border: none;
+  width: 600px;
 }
 
 .footer-contact-number {
+  display: block;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   text-decoration-line: none;
   color: #000000;
+  margin: 0 auto;
+}
+
+.inner-header {
+  display: flex;
+  width: 528px;
+  margin: 0 601px 0 71px;
+  flex-direction: column;
+}
+
+.catalog-filter {
+  display: flex;
+  width: 361px;
+  margin-right: auto;
 }
 
 .catalog-filter-group {
   border: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+
+.catalog-filter-title {
+  padding: 0;
+  margin: 0;
+}
+
+.infostructure {
+  margin-right: 67px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
 }
 
 .inner-header-filter-container {
+  display: flex;
+  flex-wrap: wrap;
   color: #FFFFFF;
-}
-
-.inner-header-filter-container {
   background-image: url("../images/catalog-filter-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -226,6 +385,12 @@ img {
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
+  width: 528px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -254,6 +419,12 @@ img {
   background-color: #83B3D3;
   border: none;
   border-radius: 4px;
+  width: 160px;
+}
+
+.price-filter {
+  width: 160px;
+  margin-right: 72px;
 }
 
 .button-reset {
@@ -264,6 +435,13 @@ img {
   background-color: rgba(131, 179, 211, 0);
   border: none;
   text-align: center;
+  width: 160px;
+}
+
+.sorting-container {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
 }
 
 .sorting-title {
@@ -271,6 +449,8 @@ img {
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
+  width: 339px;
+  margin: 0 192px 0 0;
 }
 
 .mode-border {
@@ -290,6 +470,65 @@ img {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  width: 287px;
+  margin-right: auto;
+}
+
+.sorting-viev-variants {
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+}
+
+.button-sort {
+  width: 48px
+}
+
+.products-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1057px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.product-list {
+  margin: 0;
+  padding: 0;
+}
+
+.product-card {
+  width: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product-card-type {
+  width: 133px;
+  line-height: 23px;
+  margin: 0 24px 0 0;
+  padding: 0;
+}
+
+.product-card-button-detail {
+  width: 133px;
+}
+
+.product-card-button-favorite {
+  width: 141px;
+  margin-left: 26px;
+}
+
+.product-card-type-price {
+  width: 143px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card-title {
+  margin: 0;
+  padding: 0;
 }
 
 .product-card-link {
@@ -333,6 +572,7 @@ img {
   background-repeat: space;
   width: calc(18px*4);
   height: 20px;
+  text-align: center;
 }
 
 .product-card-stars-3 {
@@ -362,6 +602,7 @@ img {
   color: #333333;
   background-color: #F2F2F2;
   border-radius: 4px;
+  width: 160px;
 }
 
 .pagination-show-more-link {
@@ -374,17 +615,48 @@ img {
   background: #83B3D3;
   border-radius: 4px;
   text-decoration: none;
+  width: 620px;
+  margin: 0 290px;
+}
+
+.pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1056px;
+  margin: 0 auto;
+}
+
+.pagination-container-2 {
+  width: 370px;
+  margin: 0 297px 0 0;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .amount-product-on-page {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  width: 175px;
+  margin: 0 auto 0 0;
 }
 
 .select-amount-product-on-page {
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  width: 160px;
+}
+
+.newslatter-container {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .newsletter-catalog {
@@ -395,7 +667,9 @@ img {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
-  text-transform: uppercase
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 720px;
 }
 
 .newsletter-catalog-description {
@@ -403,6 +677,13 @@ img {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  width: 720px;
+  margin: 0 auto;
+}
+
+.newsletter-catalog-form {
+  margin: 0;
+  display: flex;
 }
 
 .pagination-link {
@@ -415,9 +696,52 @@ img {
   text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
+  display: block;
+}
+
+.pagination-item {
+  width: 55px;
 }
 
 .pagination-current {
   background-color: #F2F2F2;
   color: #000000;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-index-appointment {
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+}
+
+.footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 107px;
+  padding: 0px;
+  margin: 0 0 0 72px;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-telephone-number {
+  width: 720px;
+  margin: 0 0 0 61px;
+}
+
+.footer-about-text {
+  width: 115px;
+  margin: 0 0 0 53px;
 }
