@@ -73,7 +73,7 @@
         </header>
         <section class="catalog-filter">
           <h2 class="visually-hidden">Фильтр каталога</h2>
-          <form class="catalog-filter filter" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
             <fieldset class="catalog-filter-group infostructure">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -122,27 +122,25 @@
         </form>
       </div>
       <section class="sorting">
-        <div class="sorting-container">
-          <h2 class="sorting-title">Найдено гостиниц: 38</h2>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
-          <div class="sorting-viev-variants">
-            <a href="#" class="button-sort">
-              <img class="mode-border" src="images/mode-tile.svg" width="16" height="14">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="button-sort">
-              <img class="mode-border inactive" src="images/mode-slideshow.svg" width="16" height="14">
-              <span class="visually-hidden">Показать слайдом</span>
-            </a>
-            <a href="#" class="button-sort">
-              <img class="mode-border inactive" src="images/mode-list.svg" width="16" height="14">
-              <span class="visually-hidden">Показать список</span>
-            </a>
-          </div>
+        <h2 class="sorting-title">Найдено гостиниц: 38</h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
+        <div class="sorting-viev-variants">
+          <a href="#" class="button-sort">
+            <img class="mode-border" src="images/mode-tile.svg" width="16" height="14">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a href="#" class="button-sort">
+            <img class="mode-border inactive" src="images/mode-slideshow.svg" width="16" height="14">
+            <span class="visually-hidden">Показать слайдом</span>
+          </a>
+          <a href="#" class="button-sort">
+            <img class="mode-border inactive" src="images/mode-list.svg" width="16" height="14">
+            <span class="visually-hidden">Показать список</span>
+          </a>
         </div>
       </section>
 
@@ -152,6 +150,8 @@
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotel-1.jpg" width="300" height="206"
                 alt="Гостиница Amara Resort & Spa">
+            </a>
+            <a class="product-card-title-link" href="#">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="product-card-type">Гостиница</p>
@@ -170,6 +170,8 @@
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotel-2.jpg" width="300" height="206"
                 alt="Гостиница Desert Quail Inn">
+            </a>
+            <a class="product-card-title-link" href="#">
               <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
             <p class="product-card-type">Гостиница</p>
@@ -188,6 +190,8 @@
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotel-3.jpg" width="300" height="206"
                 alt="Гостиница Villas at Poco Diablo">
+            </a>
+            <a class="product-card-title-link" href="#">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <p class="product-card-type">Гостиница</p>
@@ -206,16 +210,19 @@
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotel-4.jpg" width="300" height="206"
                 alt="Гостиница GreenTree Inn">
+            </a>
+            <a class="product-card-title-link" href="#">
               <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
             <p class="product-card-type">Гостиница</p>
             <p class="product-card-type-price">От 3000 ₽</p>
             <a class="product-card-button-detail" href="#">подробнее</a>
             <a class="product-card-button-favorite" href="#">В избранное</a>
-            <span class="visually-hidden">
-              Двухзвездочная гостиница
-              <div class="product-card-stars-2"></div>
-            </span>
+            <div class="product-card-stars-2">
+              <span class="visually-hidden">
+                Двухзвездочная гостиница
+              </span>
+            </div>
             <span class="product-card-rating">Рейтинг: 9,2</span>
           </li>
         </div>
