@@ -484,6 +484,7 @@ img {
 }
 
 .field {
+  font: inherit;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
@@ -491,7 +492,9 @@ img {
   background-color: #F2F2F2;
   border: none;
   width: 600px;
+  margin: 0;
   margin-left: auto;
+  padding: 5px 22px;
 }
 
 .field:hover {
