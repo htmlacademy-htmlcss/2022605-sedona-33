@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог гостиниц в городе Седона</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -77,12 +77,11 @@
                 </span>
               </a>
             </li>
-            <li class="breadcrumbs-item">
-              <img class="breadcumbs-arrow" src="images/breadcrumbs-arrow.svg" alt="breacrumb-arrow" width="5" height="8">
-            </li>
+
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
+
           </ul>
         </header>
         <section class="catalog-filter">
@@ -165,27 +164,28 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="right: 64px; width: 224px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
                 </div>
               </div>
             </fieldset>
+            <div class="price-filter">
+              <button class="button-submit" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
-        <div class="price-filter">
-          <button class="button-submit" type="submit">Применить</button>
-          <button class="button-reset" type="submit">Сбросить</button>
-        </div>
 
       </div>
       <section class="sorting">
         <h2 class="sorting-title">Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="Сортировка">
+        <label class="visually-hidden" for="sorting-label">Сортировка</label>
+        <select class="select-control" aria-label="Сортировка" id="sorting-label">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
@@ -326,7 +326,8 @@
           </ul>
         </div>
         <span class="amount-product-on-page">Гостиниц на странице:</span>
-        <select class="select-amount-product-on-page" aria-label="Сортировка количества товаров на странице">
+        <label class="visually-hidden" for="amount-on-page-select">Количество гостиниц на странице</label>
+        <select class="select-amount-product-on-page" aria-label="Сортировка количества товаров на странице" id="amount-on-page-select">
           <option value="four">4</option>
           <option value="eight">8</option>
           <option value="sixteen">16</option>
