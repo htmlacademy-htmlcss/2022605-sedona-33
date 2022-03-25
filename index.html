@@ -95,7 +95,8 @@
           <li class="sub-advantages-item-no-logo advantage-text-container">
             <h3 class="advantages-title sub-advantages-title">Небольшая площадь</h3>
             <p class="sub-advantages-number">№3</p>
-            <p class="sub-advantages-description description-no-logo">Все достопримечательности находятся очень близко</p>
+            <p class="sub-advantages-description description-no-logo">Все достопримечательности находятся очень близко
+            </p>
           </li>
           <li class="sub-advantages-item-no-logo advantage-text-container road">
             <h3 class="advantages-title sub-advantages-title">Красивая дорога</h3>
@@ -220,78 +221,81 @@
   <div class="modal-container modal-container-close">
     <div class="modal modal-auth">
       <section class="modal-content">
-        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-          <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" />
-          </svg>
-        </button>
-        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="field-group">
-
-          <div class="modal-dates-container">
-            <label for="incoming-date" class="heading-modal">Дата заезда:</label>
-            <input type="date" name="incoming-date" id="incoming-date" class="input-modal-fill dates">
-          </div>
-          <p class="sub-text-date red-sub-text-modal">Мы не можем отправить вас в прошлое.</p>
-
-          <div class="modal-dates-container">
-            <label for="outcoming-date" class="heading-modal">Дата выезда:</label>
-            <input type="date" name="outcoming-date" id="outcoming-date" class="input-modal-fill dates">
-          </div>
-          <p class="sub-text-date">На эти даты есть свободные номера. Пока есть.</p>
-
-          <div class="amount-of-people-modal">
-            <label for="adults-amount" class="heading-modal adults-label">Взрослые:</label>
-            <button type="button" class="modal-button-countage left-border-radius"
-              onclick="this.nextElementSibling.stepDown()">
-              <svg width="14" height="2" class="plus-minus-icon" viewBox="0 0 14 2" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0L0 2L14 2V0L0 0Z" />
-              </svg>
-            </button>
-            <input type="number" id="adults-amount" name="adults-amount" class="input-number-modal input-modal-fill"
-              min="0" max="100" value="2" readonly>
-            <button type="button" class="modal-button-countage right-border-radius"
-              onclick="this.previousElementSibling.stepUp()">
-              <svg width="13" height="13" class="plus-minus-icon" viewBox="0 0 13 13" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
-              </svg>
-            </button>
-            <span class="form-label form-label-icon">
-              <label for="children-amount" class="heading-modal cids-label">Дети:</label>
-              <span class="tooltip">
-                <button type="button" class="i-modal-button" aria-labelledby="tooltip-label">
-                  <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="#FFFFFF" />
-                  </svg>
-                </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
-                  вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </span>
-            </span>
-            <button type="button" class="modal-button-countage left-border-radius"
-              onclick="this.nextElementSibling.stepDown()">
-              <svg width="14" height="2" class="plus-minus-icon" viewBox="0 0 14 2" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0L0 2L14 2V0L0 0Z" />
-              </svg>
-            </button>
-            <input type="number" id="children-amount" name="children-amount" class="input-number-modal input-modal-fill"
-              min="0" max="100" value="1" readonly>
-            <button type="button" class="modal-button-countage right-border-radius"
-              onclick="this.previousElementSibling.stepUp()">
-              <svg width="13" height="13" class="plus-minus-icon" viewBox="0 0 13 13" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
-              </svg>
-            </button>
-          </div>
+        <div class="modal-header-container">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" />
+            </svg>
+          </button>
         </div>
-        <button class="modal-button-submit" type="submit">Найти</button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group">
+
+            <div class="modal-dates-container">
+              <label for="incoming-date" class="heading-modal">Дата заезда:</label>
+              <input type="date" name="incoming-date" id="incoming-date" class="input-modal-fill dates">
+              <p class="sub-text-date sub-text-shown error-sub-text-modal">Мы не можем отправить вас в прошлое.</p>
+            </div>
+
+
+            <div class="modal-dates-container">
+              <label for="outcoming-date" class="heading-modal">Дата выезда:</label>
+              <input type="date" name="outcoming-date" id="outcoming-date" class="input-modal-fill dates">
+              <p class="sub-text-date sub-text-shown">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+
+            <div class="amount-of-people-modal">
+              <label for="adults-amount" class="heading-modal adults-label">Взрослые:</label>
+              <button type="button" class="modal-button-countage left-border-radius"
+                onclick="this.nextElementSibling.stepDown()">
+                <svg width="14" height="2" class="plus-minus-icon" viewBox="0 0 14 2" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" />
+                </svg>
+              </button>
+              <input type="number" id="adults-amount" name="adults-amount" class="input-number-modal input-modal-fill"
+                min="0" max="100" value="2" readonly>
+              <button type="button" class="modal-button-countage right-border-radius"
+                onclick="this.previousElementSibling.stepUp()">
+                <svg width="13" height="13" class="plus-minus-icon" viewBox="0 0 13 13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                </svg>
+              </button>
+              <span class="form-label form-label-icon">
+                <label for="children-amount" class="heading-modal cids-label">Дети:</label>
+                <span class="tooltip">
+                  <button type="button" class="i-modal-button" aria-labelledby="tooltip-label">
+                    <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="#FFFFFF" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                    вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <button type="button" class="modal-button-countage left-border-radius"
+                onclick="this.nextElementSibling.stepDown()">
+                <svg width="14" height="2" class="plus-minus-icon" viewBox="0 0 14 2" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" />
+                </svg>
+              </button>
+              <input type="number" id="children-amount" name="children-amount"
+                class="input-number-modal input-modal-fill" min="0" max="100" value="1" readonly>
+              <button type="button" class="modal-button-countage right-border-radius"
+                onclick="this.previousElementSibling.stepUp()">
+                <svg width="13" height="13" class="plus-minus-icon" viewBox="0 0 13 13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="modal-button-submit" type="submit">Найти</button>
         </form>
       </section>
     </div>
